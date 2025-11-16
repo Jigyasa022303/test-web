@@ -23,3 +23,15 @@ form.addEventListener("submit", (e) => {
   formMessage.style.color = "#64ffda";
   form.reset();
 });
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop page reload
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Message:", message);
+});
+
